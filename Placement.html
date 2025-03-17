@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="medical coding, clinical research, Spruce, Spruce clinical research" />
+	<meta name="author" content="Spruce Lifeskills			" />
+	<meta name="robots" content="" />
+	
+	<!-- DESCRIPTION -->
+	<meta name="description" content="At Spruce Lifeskills Clinical Research & Medical Coding Institute, we are committed to empowering aspiring professionals with the knowledge and skills required to excel in the dynamic healthcare and research sectors. />
+	
+	<!-- OG -->
+	<meta property="og:title" content="Spruce Clinical Research & Medical Coding" />
+	<meta property="og:description" content="At Spruce Lifeskills Clinical Research & Medical Coding Institute, we are committed to empowering aspiring professionals with the knowledge and skills required to excel in the dynamic healthcare and research sectors." />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+
+	<script>
+		// Disable right-click
+		document.addEventListener('contextmenu', function(event) {
+			event.preventDefault();  // Prevent the context menu from appearing
+		});
+	</script>
+	
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>Spruce Lifeskills | Clinical Research& Medical Coding </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- All PLUGINS CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+	
+	<!-- TYPOGRAPHY ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+	
+	<!-- SHORTCODES ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
+	
+	<!-- STYLESHEETS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
+	
+	<!-- REVOLUTION SLIDER CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/navigation.css">
+	<!-- REVOLUTION SLIDER END -->	
+	<style>
+		/* Styling for the floating enquiry button */
+		.floating-btn {
+			position: fixed;
+			bottom: 40px;
+			left: 15px;
+			bottom: 30px;
+			z-index: 1000;
+		}
+		#submenu1{
+			padding-left: 15px;
+		}
+		.cours-search-bx m-b30{
+			padding-left: 100px;
+		}
+	</style>
+
+</head>
+<body id="bg">
+<div class="page-wraper">
+<div id="loading-icon-bx"></div>
+	<!-- Header Top ==== -->
+    <header class="header rs-nav header-transparent">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="topbar-left">
+						<ul>
+							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+							<li><a href="mailto:sprucelifeskills@gmail.com"><i class="fa fa-envelope-o"></i>sprucelifeskills@gmail.com</a></li>
+						</ul>
+					</div>
+					<div class="topbar-right">
+						<ul>
+							<li>
+								<div class="container" >
+									<div  class="row d-flex align-items-center justify-content-center text-center text-white py-3 flex-nowrap"  >
+										<div class="col-6 d-flex justify-content-center " >
+											<div class="button1">
+											<button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal" style="height:25px; padding-top: 4px;color: white;" >
+												Book Free Demo Class
+											</button>
+											</div>
+										</div>
+									
+				<!-- Include EmailJS Library -->
+				<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+				
+				<script>
+				  (function(){
+					emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+				  })();
+				
+				  function sendEmail(event) {
+					event.preventDefault(); // Prevent default form submission
+				
+					// Collect form data
+					let name = document.getElementById("name").value;
+					let email = document.getElementById("email").value;
+					let phone = document.getElementById("phone").value;
+				
+					// EmailJS send parameters
+					let templateParams = {
+					  from_name: name,
+					  from_email: email,
+					  phone_number: phone,
+					  to_email: "sprucelifeskills@gmail.com", // Receiver's email
+					};
+				
+					// Send the email
+					emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+					  .then(function(response) {
+						alert("Demo booked successfully! We will contact you soon.");
+						document.getElementById("demoForm").reset(); // Reset form after submission
+					  }, function(error) {
+						alert("Failed to book the demo. Please try again.");
+						console.log("Error:", error);
+					  });
+				  }
+				</script>
+				
+				<!-- Modal -->
+				<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="demoModalLabel" style="color: black;">Book Your Free Demo Class</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="modal-body">
+						<form id="demoForm" onsubmit="sendEmail(event)">
+						  <div class="mb-3">
+							<label for="name" class="form-label" style="color: black; text-align: left; display: block;">Your Name</label>
+							<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+						  </div>
+						  <div class="mb-3">
+							<label for="email" class="form-label" style="color: black;text-align: left; display: block;">Email address</label>
+							<input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+						  </div>
+						  <div class="mb-3">
+							<label for="phone" class="form-label" style="color: black; text-align: left; display: block;">Phone Number</label>
+							<input type="tel" class="form-control" id="phone" placeholder="Enter your Number" required>
+						  </div>
+						  <button type="submit" class="btn btn-success">Submit</button>
+						</form>
+					  </div>
+					</div>
+				  </div>
+				</div>
+									
+										<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+										
+										<div class="col-6 d-flex justify-content-center">
+											<a href="tel:+919595025757" class="btn btn-light fw-bold px-3 py-1">GET QUICK CALL BACK</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						
+							<li><a href="https://student.sprucelifeskills.in/addmission_login">Login</a></li>
+							<li><a href="https://student.sprucelifeskills.in/form">Register</a></li>
+							<li><a href="https://student.sprucelifeskills.in/register">Fee Payment</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-header navbar-expand-lg">
+			
+            <div class="menu-bar clearfix">
+				
+				<div class="container clearfix">
+					<!-- Header Logo ==== -->
+					<div class="menu-logo">
+						<a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
+					</div>
+					<!-- Mobile Nav Button ==== -->
+                    <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Author Nav ==== -->
+                    <div class="secondary-menu">
+                        <div class="secondary-inner">
+                            <ul>
+								
+							</ul>
+						</div>
+                    </div>
+					<!-- Search Box ==== -->
+                    <div class="nav-search-bar">
+                        <form action="#">
+                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                            <span><i class="ti-search"></i></span>
+                        </form>
+						<span id="search-remove"><i class="ti-close"></i></span>
+                    </div>
+					<!-- Navigation Menu ==== -->
+					
+                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+						
+						<div class="menu-logo">
+							<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+							<li class="active"><a href="index.html">Home </a>
+								
+							</li>
+							<li><a href="javascript:;">About Us <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="javascript:;">About<i class="fa fa-angle-right"></i></a>
+										<ul class="sub-menu">
+											<li><a href="about-1.html">Our Journey</a></li>
+											<li><a href="about-2.html">Our Mission & Vision</a></li>
+										</ul>
+									</li></ul>
+									
+							</li>
+							<li class="add-mega-menu"><a href="javascript:;">Our Courses <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu add-menu">
+									<li class="add-menu-left">
+										<h5 class="menu-adv-title">Our Courses</h5>
+										<ul>
+											<li><a href="Medical-Coding.html">Medical Coding<i class="fa fa-angle-right"></i></a>
+												<ul id="submenu1" class="sub-menu">
+													<li><a href="Medical-Coding.html">Foundation Medical Coding</a></li>
+													<li><a href="Medical-Coding.html">Certified Professional Coder (CPC) Training</a></li>
+												</ul>	
+											</li>										
+											<li><a href="Clinical Research.html">Clinical Research </a></li>
+											<li><a href="medical-billing.html">Medical Billing</a></li>	
+											<li><a href="Account-receviable.html">Account Receivable</a></li>	
+											<li><a href="Campus-Corporate.html">Campus to Corporate</a></li>										
+									
+									
+										</ul>
+									</li>
+									<li class="add-menu-right">
+										<img src="assets/images/adv/adv.jpg" alt=""/>
+									</li>
+								</ul>
+							</li>
+							<li><a href="blog-details.html">Blog  <i class="fa fa-chevron-down"></i></a>
+							</li>
+							<li><a href="gallery.html">Gallery </a></li>
+							<li><a href="contact-1.html">Contact </a></li>
+							<li><a href="#">Placement </a></li>
+							<li><a href="Certification.html">Certification </a></li>
+							
+						<div class="nav-social-link">
+							<a href="https://www.facebook.com/sprucelifeskills"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/sprucelifeskills?igsh=YnpjMGsxYXEwbmpv"><i class="fa fa-instagram"></i></a>
+							<a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a>
+						</div>
+                    </div>
+					<!-- Navigation Menu END ==== -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Top END ==== -->
+
+	<style>
+		/* Floating Social Media Buttons */
+		.social-icons {
+			position: fixed;
+			right: 20px;
+			top: 75%;
+			transform: translateY(-50%);
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			z-index: 1000;
+		}
+
+		.social-icons a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			color: white;
+			font-size: 24px;
+			text-decoration: none;
+			border-radius: 50%;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.social-icons a:hover {
+			transform: scale(1.1);
+		}
+
+		.whatsapp { background-color: #25D366; }
+		.facebook { background-color: #1877F2; }
+		.instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+	</style>
+</head>
+<body>
+
+	<!-- Social Media Icons -->
+	<div class="social-icons">
+		<a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+		<a href="https://www.facebook.com/sprucelifeskills" target="_blank" class="facebook">
+			<i class="fab fa-facebook-f"></i>
+		</a>
+		<a href="https://www.instagram.com/sprucelifeskills/" target="_blank" class="instagram">
+			<i class="fab fa-instagram"></i>
+		</a>
+	</div>
+
+
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <!-- <h5 style="font-size: 30px; text-align: center; margin-top: 120px;" class="text-white">Certification</h5> -->
+				 </div>
+            </div>
+        </div>
+		<!-- Breadcrumb row -->
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li>Placement </li>
+				</ul>
+			</div>
+		</div>
+		<!-- Breadcrumb row END -->
+        <!-- inner page banner END -->
+		<style>
+			.content-block {
+				min-height: 50vh; /* Full-screen height */
+			}
+			.containerrr{
+				display: flex;
+				justify-content:space-between;
+				flex-wrap: wrap;
+			}
+			.cards{
+				height:200px;
+				width: 170px;
+				/* border: 1px solid black; */
+				box-shadow:  0px 0px 10px 0px #000;
+				margin-top: 20px;
+				margin-bottom: 40px;
+				margin-inline: 30px;
+				/* border-radius: 20px; */
+				/* background-color: rgb(40,107,101); */
+			}
+			.cards img{
+				border-radius: 50%;
+				height: 50%;
+				width:70%;
+				margin-top: 8px;
+				margin-left: 25px;
+				background-size: cover;	
+				box-shadow:  0px 0px 10px 0px #000;
+	
+				/* border-radius: 20px; */
+	
+			}
+			/* .cards:hover{
+				transform: scale(1.1);			
+			} */
+			 .cards h5{
+				text-align: center;
+				font-size: 15px;
+				text-transform: capitalize;
+			 }
+			 .cards h6{
+				margin-top: -8px;
+				text-align: center;
+				font-weight: 400;
+				font-size: 10px;
+				line-height: 15px;
+				text-transform: capitalize;
+
+			 }
+			 .cards p{
+				line-height: 15px;
+				margin-top: -8px;
+				text-align: center;
+				font-weight: 500;
+				font-size: 12px;
+				text-transform: capitalize;
+
+				
+			 }
+			 .heading{
+				font-size: 38px;
+				color: rgb(38, 88, 83);
+				text-align: center;
+				text-transform: uppercase;
+				margin-top: 40px;
+				font: weight 600px;;
+			 }
+			 @media only screen and (max-width: 767px) {
+				.heading{
+					font-size: 28px;
+				}
+				
+			 }
+			 .containerrr{
+				margin-left: 68px;
+			 }
+
+		</style>
+	</head>
+	<body>
+
+		<h2 class="heading">Our Placed Students</h2>
+
+		<div class=" containerrr">
+			<div class="cards card1">
+				<img src="photo with name/amruta umare.jpeg" alt=""ankita bodele>
+				<h5>Amruta Umare</h5>
+				<h6>Hitech College Of Pharmacy Chandrapur  </h6>
+				<p>Nexg Healthcare Solution Nagpur</p>
+			</div>		
+			<div class="cards card2">
+				<img src="photo with name/shradhha raut.jpeg" alt="shraddha raut">
+				<h5> Shraddha Raut</h5>
+				<h6>Bajiraoji Karanjekar college Bhandara</h6>
+				<p> Placed At: TCS Nagpur</p>
+			</div>
+			<div class="cards card3">
+				<img src="photo with name/mansi shahu.jpg" alt="">
+				<h5>Mansi Shahu</h5>
+				<h6>Dr.Rajendra Gode College Of Pharmacy</h6>
+				<p>Placed At: Nexg Healthcare Solution Nagpur</p>
+			</div>
+			<div class="cards card4">
+				<img src="photo with name/aksahy alnewar.jpeg" alt="">
+				<h5>aksahy alnewar</h5>
+				<h6>Sonekar College Of <br> Pharmacy</h6>
+				<p>Placed At: Nexg Healthcare Solution Nagpur</p>
+			</div>
+			<div class="cards card5">
+				<img src="photo with name/aditi sarda.jpeg" alt="">
+				<h5>Aditi Sarda</h5>
+				<h6>Karanjekar College Of <br> Pharmacy	</h6>
+				<p>Placed At:Optum Healthcare solution</p>
+	
+			</div>
+			<div class="cards card6">
+				<img src="photo with name/pooja barsagade.jpeg" alt="">
+				<h5>Pooja Barsagade</h5>
+				<h6>Kamla Nehru Mahavidyalaya, <br>Nagpur</h6>
+				<p>	Placed At: Nexg Healthcare Solution Nagpur</p>
+			</div>
+			<div class="cards card7">
+				<img src="photo with name/nikita sahare.jpeg" alt="">
+				<h5>Nikita Sahare</h5>
+				<h6>Kamla Nehru College Nagpur</h6>
+				<p>Placed At:	Gebbs Healthcare Solution Mumbai</p>
+
+			</div>
+			<div class="cards card8">
+				<img src="photo with name/ruchita kolhe.jpeg" alt="">
+				<h5>Ruchita Kolhe</h5>
+				<h6>Gondia College Of Pharmacy</h6>
+				<p>Placed At: Nexg Healthcare Solution Nagpur</p>
+
+			</div>
+			<div class="cards card9">
+				<img src="photo with name/rashi savadia.jpeg" alt="">
+				<h5>Rashi Sawadia</h5>
+				<h6>Hislop College Nagpur</h6>
+				<p>Placed At: Super Speciality Nagpur</p>
+
+			</div>
+			<div class="cards card10">
+				<img src="photo with name/nikita sonule.jpeg" alt="">
+				<h5>Nikita Sonule</h5>
+				<h6>S.K. Porwal College</h6>
+				<p>Placed At: Corrohealth Noida</p>
+
+			</div>
+			<div class="cards card11">
+				<img src="photo with name/lokesh mantriwar.jpeg" alt="">
+				<h5>Lokesh Mantriwar</h5>
+				<h6>Institute Of Pharmacy Wani</h6>
+				<p>Placed At: Ascent Business Solution Nagpur</p>
+
+			</div>
+			<div class="cards card12">
+				<img src="photo with name/mohit margade.jpeg" alt="">
+				<h5>Mohit Margade</h5>
+				<h6>P. Wadhwani College Of Pharmacy Yavatmal</h6>
+				<p>Placed At: Nexg Healthcare Solution Nagpur</p>
+
+			</div>
+			<div class="cards card13">
+				<img src="photo with name/nikita pawar.jpeg" alt="">
+				<h5>Nikita Pawar</h5>
+				<h6>Shivaji Science College Nagpur</h6>
+				<p>Placed At: Nexg Healthcare Solution Nagpur</p>
+			</div>
+			<div class="cards card14">
+				<img src="photo with name/neha bankar.jpeg" alt="">
+				<h5>Neha Bankar</h5>
+				<h6>Nagpur Institute Of Pharmacy College</h6>
+				<p>Placed At: Omega Healthcare Solution Banglore</p>
+			</div>
+			<div class="cards card15">
+				<img src="photo with name/Komal Mishra.jpeg" alt="">
+				<h5>Komal Mishra</h5>
+				<h6>SFS College</h6>
+				<p>Placed At: Ascent Business Solution Nagpur</p>
+			</div>
+			<div class="cards card16">
+				<img src="photo with name/manisha pangantiwar.jpeg" alt="">
+				<h5>Manisha Pngantiwar</h5>
+				<h6>Maharashtra Institute of Pharmacy</h6>
+				<p>Placed At: Spy Healthcare Solutions, Hyderabad</p>
+			</div>
+			<div class="cards card17">
+				<img src="photo with name/shravan raut.jpeg" alt="">
+				<h5>Shravan Raut</h5>
+				<h6>G.H. Raisoni University M.P</h6>
+				<p>Placed At: Shree Hospital Nagpur</p>
+			</div>
+			<div class="cards card18">
+				<img src="photo with name/vaishnavi shirke.jpeg" alt="">
+				<h5>Vaishnavi Shirke</h5>
+				<h6>Dharampeth Science College Nagpur</h6>
+				<p>Placed At: Omega Healthcare Solution Banglore</p>
+			</div>
+			<div class="cards card19">
+				<img src="photo with name/yashashree dhawle.jpeg" alt="">
+				<h5>Yashashree Dhawale</h5>
+				<h6>Priyadarshini J. L. College Of Pharmacy
+					Hingna
+					</h6>
+				<p>Placed At: Nexg Healthcare Solution Nagpur</p>
+			</div>
+			<div class="cards card20">
+				<img src="photo with name/prajwal chaudhary.jpeg" alt="">
+				<h5>Prajwal Chaudhary</h5>
+				<h6>Sonekar College Of Pharmacy</h6>
+				<p>Placed At: Corrohealth Noida</p>
+			</div>
+			<div class="cards card21">
+				<img src="photo with name/revatee vaidya.jpeg" alt="">
+				<h5>Revatee Vaidya</h5>
+				<h6>Balpande College Of Pharmacy</h6>
+				<p>Placed At: TCS Nagpur</p>
+			</div>
+			<div class="cards card22">
+				<img src="photo with name/ritik bhende.jpeg" alt="">
+				<h5>Ritik Bhende</h5>
+				<h6>Shree Sainath College Of Pharmacy</h6>
+				<p>Placed At: Advantmed Gujrat</p>
+			</div>
+			<div class="cards card23">
+				<img src="photo with name/purva rathi.jpeg" alt="">
+				<h5>Purva Rathi</h5>
+				<h6>IPER College Wardha</h6>
+				<p>Placed At: Freyr Solutions Hyderabad</p>
+			</div>
+			<div class="cards card24">
+				<img src="photo with name/priya yelore.jpeg" alt="">
+				<h5>Priya Yelore</h5>
+				<h6>Priyadarshini J. L. College Of Pharmacy Hingna Nagpur</h6>
+				<p>Placed At: Spy Healthcare Solutions, Hyderabad</p>
+			</div>
+		
+
+		</div>
+		.
+		<!-- Bootstrap JS (Optional) -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Footer ==== -->
+    <footer>
+        <div class="footer-top">
+			<div class="pt-exebar">
+				<div class="container">
+					<div class="d-flex align-items-stretch">
+						<div class="pt-logo mr-auto">
+							<a href="index.html"><img src="assets/images/logo-white.png" alt=""/></a>
+						</div>
+						<div class="pt-social-link">
+							<ul class="list-inline m-a0">
+								<li><a href="https://www.facebook.com/sprucelifeskills" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0" class="btn-link"><i class="fa fa-whatsapp"></i></a></li>
+								<li><a href="http://www.linkedin.com/in/spruce-lifeskills-8a3711258" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<div class="pt-btn-join">
+							<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</a>
+						</div>
+					
+						<!-- Modal -->
+						<div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p>Please provide your basic details, and you'll be redirected to the full information form.</p>
+			  <form id="basicInfoForm">
+				<div class="mb-3">
+				  <label for="enquiryName" class="form-label">Name</label>
+				  <input type="text" class="form-control" id="enquiryName" placeholder="Enter your name" required>
+				</div>
+				<div class="mb-3">
+				  <label for="phoneNumber" class="form-label">Phone Number</label>
+				  <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+				</div>
+				<div class="mb-3">
+				  <label for="serviceMessage" class="form-label">Message/Service</label>
+				  <textarea class="form-control" id="serviceMessage" rows="4" placeholder="Enter your message or service request" required></textarea>
+				</div>
+				<button type="button" class="btn btn-primary w-100" id="redirectButton">Submit</button>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+						<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+				<!-- JavaScript for Redirection -->
+<script>
+	document.getElementById('redirectButton').addEventListener('click', function () {
+	  // Get form values
+	  const name = document.getElementById('enquiryName').value.trim();
+	  const phoneNumber = document.getElementById('phoneNumber').value.trim();
+	  const message = document.getElementById('serviceMessage').value.trim();
+  
+	  // Validate form data
+	  if (name && phoneNumber && message) {
+		// Create the mailto link with the form data
+		const emailBody = `Name: ${name}\nPhone Number: ${phoneNumber}\nMessage/Service Request: ${message}`;
+		const mailtoLink = `mailto:sprucelifeskills@gmail.com?subject=Enquiry Form&body=${encodeURIComponent(emailBody)}`;
+  
+		// Open the email client
+		window.location.href = mailtoLink;
+	  } else {
+		alert('Please fill in all required fields.');
+	  }
+	});
+  </script>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+                <div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4" >
+                        <div class="widget">
+                            <h5 class="footer-title">Contact <span>Information</span></h5>
+							<p class="text-capitalize m-b20"><div class="widget widget_getintuch">	
+								<ul>
+									<li><i class="ti-location-pin"></i>ICICI Bank, 3rd Floor, Navprabhat <br>Chambers, Besides, near Center <br> Point Hotel, Ramdaspeth, Nagpur, Maharashtra 440010 <br>[ Main Branch ]</li>
+									<li><i class="ti-mobile"></i>+91-9595025757 +91-8999499930</li>
+								</ul>
+							</div></p>
+                            
+                        </div>
+                    </div>
+					<div class="col-12 col-lg-5 col-md-7 col-sm-12">
+						<div class="row">
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Company</h5>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about-1.html">About</a></li>
+										<li><a href="faq-1.html">FAQs</a></li>
+										<li><a href="contact-1.html">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Quick Link</h5>
+									<ul>
+										
+										<li><a href="https://student.sprucelifeskills.in/register">Register Now</a></li>
+										<li><a href="https://student.sprucelifeskills.in/login">Login</a></li>
+										<li><a href="https://student.sprucelifeskills.in/register">Admission</a></li>
+										<li><a href="event.html">Fee Payment</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Courses</h5>
+									<ul>
+										<li><a href="Medical-Coding.html">Medical Coding</a></li>										
+										<li><a href="Clinical Research.html">Clinical Research </a></li>
+										<li><a href="medical-billing.html">Medical Billing</a></li>	
+										<li><a href="Account-receviable.html">Account Receivable</a></li>	
+										<li><a href="Campus-Corporate.html">Campus to Corporate</a></li>										
+										<li><a href="Certification.html">Certification</a></li>			
+									</ul>								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+                        <div class="widget widget_gallery gallery-grid-4">
+                            <h5 class="footer-title">Our Gallery</h5>
+                            <ul class="magnific-image">
+								<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.23_15c5dd0f.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.23_15c5dd0f.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.23_8b654b35.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.23_8b654b35.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.24_33f1f2f8.jpg" alt=""></a></li>
+				
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center"> <a target="_blank" href="https://thebrandidentity.in">Copyright © 2024 TBI. All Rights Reserved.</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up" ></button>
+</div>
+<!-- External JavaScripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendors/counter/waypoints-min.js"></script>
+<script src="assets/vendors/counter/counterup.min.js"></script>
+<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="assets/vendors/masonry/masonry.js"></script>
+<script src="assets/vendors/masonry/filter.js"></script>
+<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/jquery.scroller.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/contact.js"></script>
+<!-- <script src="assets/vendors/switcher/switcher.js"></script> -->
+</body>
+
+</html>

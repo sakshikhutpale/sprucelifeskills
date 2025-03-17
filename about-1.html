@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="medical coding, clinical research, Spruce, Spruce clinical research" />
+	<meta name="author" content="Spruce Lifeskills			" />
+	<meta name="robots" content="" />
+	
+	<!-- DESCRIPTION -->
+	<meta name="description" content="At Spruce Lifeskills Clinical Research & Medical Coding Institute, we are committed to empowering aspiring professionals with the knowledge and skills required to excel in the dynamic healthcare and research sectors. />
+	
+	<!-- OG -->
+	<meta property="og:title" content="Spruce Clinical Research & Medical Coding" />
+	<meta property="og:description" content="At Spruce Lifeskills Clinical Research & Medical Coding Institute, we are committed to empowering aspiring professionals with the knowledge and skills required to excel in the dynamic healthcare and research sectors." />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+
+	<script>
+		// Disable right-click
+		document.addEventListener('contextmenu', function(event) {
+			event.preventDefault();  // Prevent the context menu from appearing
+		});
+	</script>
+	
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>Spruce Lifeskills | Clinical Research& Medical Coding </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- All PLUGINS CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+	
+	<!-- TYPOGRAPHY ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+	
+	<!-- SHORTCODES ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
+	
+	<!-- STYLESHEETS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
+	
+	<!-- REVOLUTION SLIDER CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/navigation.css">
+	<!-- REVOLUTION SLIDER END -->	
+	<style>
+		/* Styling for the floating enquiry button */
+		.floating-btn {
+			position: fixed;
+			bottom: 40px;
+			left: 15px;
+			bottom: 30px;
+			z-index: 1000;
+		}
+		#submenu1{
+			padding-left: 15px;
+		}
+		.cours-search-bx m-b30{
+			padding-left: 100px;
+		}
+	</style>
+
+</head>
+<body id="bg">
+<div class="page-wraper">
+<div id="loading-icon-bx"></div>
+	<!-- Header Top ==== -->
+    <header class="header rs-nav header-transparent">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="topbar-left">
+						<ul>
+							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+							<li><a href="mailto:sprucelifeskills@gmail.com"><i class="fa fa-envelope-o"></i>sprucelifeskills@gmail.com</a></li>
+						</ul>
+					</div>
+					<div class="topbar-right">
+						<ul>
+							<li>
+								<div class="container" >
+									<div  class="row d-flex align-items-center justify-content-center text-center text-white py-3 flex-nowrap"  >
+										<div class="col-6 d-flex justify-content-center " >
+											<div class="button1">
+											<button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal" style="height:25px; padding-top: 4px;color: white;" >
+												Book Free Demo Class
+											</button>
+											</div>
+										</div>
+									
+				<!-- Include EmailJS Library -->
+				<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+				
+				<script>
+				  (function(){
+					emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+				  })();
+				
+				  function sendEmail(event) {
+					event.preventDefault(); // Prevent default form submission
+				
+					// Collect form data
+					let name = document.getElementById("name").value;
+					let email = document.getElementById("email").value;
+					let phone = document.getElementById("phone").value;
+				
+					// EmailJS send parameters
+					let templateParams = {
+					  from_name: name,
+					  from_email: email,
+					  phone_number: phone,
+					  to_email: "sprucelifeskills@gmail.com", // Receiver's email
+					};
+				
+					// Send the email
+					emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+					  .then(function(response) {
+						alert("Demo booked successfully! We will contact you soon.");
+						document.getElementById("demoForm").reset(); // Reset form after submission
+					  }, function(error) {
+						alert("Failed to book the demo. Please try again.");
+						console.log("Error:", error);
+					  });
+				  }
+				</script>
+				
+				<!-- Modal -->
+				<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="demoModalLabel" style="color: black;">Book Your Free Demo Class</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="modal-body">
+						<form id="demoForm" onsubmit="sendEmail(event)">
+						  <div class="mb-3">
+							<label for="name" class="form-label" style="color: black; text-align: left; display: block;">Your Name</label>
+							<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+						  </div>
+						  <div class="mb-3">
+							<label for="email" class="form-label" style="color: black;text-align: left; display: block;">Email address</label>
+							<input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+						  </div>
+						  <div class="mb-3">
+							<label for="phone" class="form-label" style="color: black; text-align: left; display: block;">Phone Number</label>
+							<input type="tel" class="form-control" id="phone" placeholder="Enter your Number" required>
+						  </div>
+						  <button type="submit" class="btn btn-success">Submit</button>
+						</form>
+					  </div>
+					</div>
+				  </div>
+				</div>
+									
+										<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+										
+										<div class="col-6 d-flex justify-content-center">
+											<a href="tel:+919595025757" class="btn btn-light fw-bold px-3 py-1">GET QUICK CALL BACK</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						
+							<li><a href="https://student.sprucelifeskills.in/addmission_login">Login</a></li>
+							<li><a href="https://student.sprucelifeskills.in/form">Register</a></li>
+							<li><a href="https://student.sprucelifeskills.in/register">Fee Payment</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-header navbar-expand-lg">
+			
+            <div class="menu-bar clearfix">
+				
+				<div class="container clearfix">
+					<!-- Header Logo ==== -->
+					<div class="menu-logo">
+						<a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
+					</div>
+					<!-- Mobile Nav Button ==== -->
+                    <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Author Nav ==== -->
+                    <div class="secondary-menu">
+                        <div class="secondary-inner">
+                            <ul>
+								
+							</ul>
+						</div>
+                    </div>
+					<!-- Search Box ==== -->
+                    <div class="nav-search-bar">
+                        <form action="#">
+                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                            <span><i class="ti-search"></i></span>
+                        </form>
+						<span id="search-remove"><i class="ti-close"></i></span>
+                    </div>
+					<!-- Navigation Menu ==== -->
+					
+                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+						
+						<div class="menu-logo">
+							<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+							<li class="active"><a href="index.html">Home </a>
+								
+							</li>
+							<li><a href="javascript:;">About Us <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="javascript:;">About<i class="fa fa-angle-right"></i></a>
+										<ul class="sub-menu">
+											<li><a href="about-1.html">Our Journey</a></li>
+											<li><a href="about-2.html">Our Mission & Vision</a></li>
+										</ul>
+									</li></ul>
+									
+							</li>
+							<li class="add-mega-menu"><a href="javascript:;">Our Courses <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu add-menu">
+									<li class="add-menu-left">
+										<h5 class="menu-adv-title">Our Courses</h5>
+										<ul>
+											<li><a href="Medical-Coding.html">Medical Coding<i class="fa fa-angle-right"></i></a>
+												<ul id="submenu1" class="sub-menu">
+													<li><a href="Medical-Coding.html">Foundation Medical Coding</a></li>
+													<li><a href="Medical-Coding.html">Certified Professional Coder (CPC) Training</a></li>
+												</ul>	
+											</li>										
+											<li><a href="Clinical Research.html">Clinical Research </a></li>
+											<li><a href="medical-billing.html">Medical Billing</a></li>	
+											<li><a href="Account-receviable.html">Account Receivable</a></li>	
+											<li><a href="Campus-Corporate.html">Campus to Corporate</a></li>										
+									
+									
+										</ul>
+									</li>
+									<li class="add-menu-right">
+										<img src="assets/images/adv/adv.jpg" alt=""/>
+									</li>
+								</ul>
+							</li>
+							<li><a href="blog-details.html">Blog  <i class="fa fa-chevron-down"></i></a>
+							</li>
+							<li><a href="gallery.html">Gallery </a></li>
+							<li><a href="contact-1.html">Contact </a></li>
+							<li><a href="Placement.html">Placement </a></li>
+							<li><a href="Certification.html">Certification </a></li>
+							
+						<div class="nav-social-link">
+							<a href="https://www.facebook.com/sprucelifeskills"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/sprucelifeskills?igsh=YnpjMGsxYXEwbmpv"><i class="fa fa-instagram"></i></a>
+							<a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a>
+						</div>
+                    </div>
+					<!-- Navigation Menu END ==== -->
+                </div>
+            </div>
+        </div>
+    </header>
+	    <!-- Header Top END ==== -->
+		<style>
+			/* Floating Social Media Buttons */
+			.social-icons {
+				position: fixed;
+				right: 20px;
+				top: 75%;
+				transform: translateY(-50%);
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				z-index: 1000;
+			}
+	
+			.social-icons a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50px;
+				height: 50px;
+				color: white;
+				font-size: 24px;
+				text-decoration: none;
+				border-radius: 50%;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+				transition: transform 0.2s ease-in-out;
+			}
+	
+			.social-icons a:hover {
+				transform: scale(1.1);
+			}
+	
+			.whatsapp { background-color: #25D366; }
+			.facebook { background-color: #1877F2; }
+			.instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+		</style>
+	</head>
+	<body>
+	
+		<!-- Social Media Icons -->
+		<div class="social-icons">
+			<a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp">
+				<i class="fab fa-whatsapp"></i>
+			</a>
+			<a href="https://www.facebook.com/sprucelifeskills" target="_blank" class="facebook">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="https://www.instagram.com/sprucelifeskills/" target="_blank" class="instagram">
+				<i class="fab fa-instagram"></i>
+			</a>
+		</div>
+
+    <!-- Inner Content Box ==== -->
+    <div class="page-content">
+        <!-- Page Heading Box ==== -->
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <!-- <h5 style="font-size: 30px; text-align: center; margin-top: 120px;" class="text-white">About Us</h5> -->
+				 </div>
+            </div>
+        </div>
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li>About Us</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Page Heading Box END ==== -->
+		<!-- Page Content Box ==== -->
+		<div class="content-block">
+            <!-- About Us ==== -->
+			<div class="section-area section-sp1">
+                <div class="container">
+					 <div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+							<div class="feature-container">
+								<div class="feature-md text-white m-b20">
+									<a href="#" class="icon-cell"><img src="data:image/png;base64,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" alt=""/></a> 
+								</div>
+								<div class="icon-content">
+									<h5 class="ttr-tilte">Industry Recognized Certification</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+							<div class="feature-container">
+								<div class="feature-md text-white m-b20">
+									<a href="#" class="icon-cell"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDuvok-HDe63n-3UaMa-0GbhCQlOCJSWMbg&s" alt=""/></a> 
+								</div>
+								<div class="icon-content">
+									<h5 class="ttr-tilte">Access to Exclusive Resources</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+							<div class="feature-container">
+								<div class="feature-md text-white m-b20">
+									<a href="#" class="icon-cell"><img src="assets/images/icon/icon3.png" alt=""/></a> 
+								</div>
+								<div class="icon-content">
+									<h5 class="ttr-tilte">Professional Credibility</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+							<div class="feature-container">
+								<div class="feature-md text-white m-b20">
+									<a href="#" class="icon-cell"><img src="assets/images/icon/icon4.png" alt=""/></a> 
+								</div>
+								<div class="icon-content">
+									<h5 class="ttr-tilte">Support and Guidance</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<!-- About Us END ==== -->
+            <!-- Our Story ==== -->
+			<div class="section-area bg-gray section-sp1 our-story">
+				<div class="container">
+					<div class="row align-items-center d-flex">
+						<div class="col-lg-5 col-md-12 heading-bx">
+							<h2 class="m-b10">Our Story</h2>
+							<h5 class="fw4"><p align="justify">Since 2008, we've pioneered the way, introducing medical coding to Nagpur and becoming the sole AAPC-authorized partner. With a relentless commitment to quality, our ISO-certified institute has transformed countless careers, with our graduates sought after by hospitals, pharmaceutical leaders, and top IT companies</p>
+							
+						</div>
+						<div class="col-lg-7 col-md-12 heading-bx p-lr">
+							<div class="video-bx">
+								<img src="images/millennial-asia-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project-colleagues-working-together-planning-success-strategy-enjoy-teamwork-small-mode.avif" alt=""/>
+								<a href="https://www.youtube.com/watch?v=x_sJzVe9P_8" class="popup-youtube video"><i class="fa fa-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Our Story END ==== -->
+
+			<div class="img">
+				<img src="images/new.png" alt="">
+			</div>
+		
+			
+			<!-- Our Status ==== -->
+			<div class="section-area content-inner section-sp1">
+                <div class="container">
+                    <div class="section-content">
+                         <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+                                    <div class="text-primary">
+										<span class="counter">3,788</span><span>+</span>
+									</div>
+									<span class="counter-text">Students Have Trusted US
+									</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+									<div class="text-black">
+										<span class="counter">32
+										</span><span>+</span>
+									</div>
+									<span class="counter-text">Recruitment partners
+									</span>
+								</div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+									<div class="text-primary">
+										<span class="counter">100</span><span>+</span>
+									</div>
+									<span class="counter-text">Yearly placements
+									</span>
+								</div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+									<div class="text-black">
+										<span class="counter">20</span><span>+</span>
+									</div>
+									<span class="counter-text">Experienced Faculty</span>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- Our Status END ==== -->
+			<!-- About Content ==== -->
+			<div class="section-area section-sp2 bg-fix ovbl-dark join-bx text-center" style="background-image:url(assets/images/background/bg.jpg);">
+                <div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="join-content-bx text-white">
+								<h2>We introduced Medical
+									Coding to Central India</h2>
+							
+								<p>and remain the first institute offering combined training in clinical research & medical coding in a single program.</p>
+								<a href="contact-1.html" class="btn button-md">Join Now</a>
+							</div>
+						</div></div></div><br><br><br>
+
+						<div class="container">
+							<div class="row">
+					<div class="col-md-4">
+						<h2 class="join-content-bx text-white">Exclusive AAPC Partner</h2>
+					
+						<p style="color: aliceblue;">Central India's only authorized education partner of AAPC</p>
+					</div>
+
+					<div class="col-md-4">
+						<h2 class="join-content-bx text-white">Proven Success</h2>
+					
+						<p style="color: aliceblue;">With over 100 placements achieved in 2023 alone.
+						</p>
+					</div>
+
+					<div class="col-md-4">
+						<h2 class="join-content-bx text-white">Expert Faculty</h2>
+					
+						<p style="color: aliceblue;">Our dedicated team includes doctors and industry experts with over 5 years of experience.</p>
+					</div></div></div>
+					</div>
+				</div>
+			</div>
+			<!-- About Content END ==== -->
+			<!-- Testimonials ==== -->
+			<div class="section-area section-sp2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 heading-bx left">
+							<h2 class="title-head text-uppercase">what people <span>say</span></h2>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+						</div>
+					</div>
+					<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+						<div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="images/gettyimages2.jpg" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Pallavi Sharma</h5>
+									<p>Great place to learn Medical Coding</p>
+								</div>
+								<div class="testimonial-content">
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="images/getty images.jpg" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Rutik Kapgate</h5>
+									<p>student medical coding ..good course</p>
+								</div>
+								<div class="testimonial-content">
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="images/getty images.jpg" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Pallavi Tiwari</h5>
+									<p>I had joined medical coding in spruce.I had a good experience in last 3 months as they gave training with hands on traning on LMS and practice of lots of Practical Scenarios </p>
+								</div>
+								<div class="testimonial-content">
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			<!-- Testimonials END ==== -->
+		</div>
+		<!-- Page Content Box END ==== -->
+    </div>
+    <!-- Inner Content Box END ==== -->
+	 	<!-- Enquiry Now Button -->
+	<div class="container text-center mt-5">
+		<button class="btn btn-primary floating-btn" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</button>
+	  </div>
+	
+	  <!-- Enquiry Modal -->
+	  <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p>Please provide your basic details, and you'll be redirected to the full information form.</p>
+			  <form id="basicInfoForm">
+				<div class="mb-3">
+				  <label for="enquiryName" class="form-label">Name</label>
+				  <input type="text" class="form-control" id="enquiryName" placeholder="Enter your name" required>
+				</div>
+				<div class="mb-3">
+				  <label for="phoneNumber" class="form-label">Phone Number</label>
+				  <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+				</div>
+				<div class="mb-3">
+				  <label for="serviceMessage" class="form-label">Message/Service</label>
+				  <textarea class="form-control" id="serviceMessage" rows="4" placeholder="Enter your message or service request" required></textarea>
+				</div>
+				<button type="button" class="btn btn-primary w-100" id="redirectButton">Submit</button>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+				
+<!-- JavaScript for Redirection -->
+<script>
+	document.getElementById('redirectButton').addEventListener('click', function () {
+	  // Get form values
+	  const name = document.getElementById('enquiryName').value.trim();
+	  const phoneNumber = document.getElementById('phoneNumber').value.trim();
+	  const message = document.getElementById('serviceMessage').value.trim();
+  
+	  // Validate form data
+	  if (name && phoneNumber && message) {
+		// Create the mailto link with the form data
+		const emailBody = `Name: ${name}\nPhone Number: ${phoneNumber}\nMessage/Service Request: ${message}`;
+		const mailtoLink = `mailto:sprucelifeskills@gmail.com?subject=Enquiry Form&body=${encodeURIComponent(emailBody)}`;
+  
+		// Open the email client
+		window.location.href = mailtoLink;
+	  } else {
+		alert('Please fill in all required fields.');
+	  }
+	});
+  </script>
+
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-4a22b19d-12f4-4237-8eb4-c8fe46d43108" data-elfsight-app-lazy></div>
+  <!-- Footer ==== -->
+  <footer>
+	<div class="footer-top">
+		<div class="pt-exebar">
+			<div class="container">
+				<div class="d-flex align-items-stretch">
+					<div class="pt-logo mr-auto">
+						<a href="index.html"><img src="assets/images/logo-white.png" alt=""/></a>
+					</div>
+					<div class="pt-social-link">
+						<ul class="list-inline m-a0">
+							<li><a href="https://www.facebook.com/sprucelifeskills" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0" class="btn-link"><i class="fa fa-whatsapp"></i></a></li>
+							<li><a href="http://www.linkedin.com/in/spruce-lifeskills-8a3711258" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+					</div>
+					<div class="pt-btn-join">
+						<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</a>
+					</div>
+				
+					<!-- Modal -->
+					<div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  <p>Please provide your basic details, and you'll be redirected to the full information form.</p>
+		  <form id="basicInfoForm">
+			<div class="mb-3">
+			  <label for="enquiryName" class="form-label">Name</label>
+			  <input type="text" class="form-control" id="enquiryName" placeholder="Enter your name" required>
+			</div>
+			<div class="mb-3">
+			  <label for="phoneNumber" class="form-label">Phone Number</label>
+			  <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+			</div>
+			<div class="mb-3">
+			  <label for="serviceMessage" class="form-label">Message/Service</label>
+			  <textarea class="form-control" id="serviceMessage" rows="4" placeholder="Enter your message or service request" required></textarea>
+			</div>
+			<button type="button" class="btn btn-primary w-100" id="redirectButton">Submit</button>
+		  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
+					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+			<!-- JavaScript for Redirection -->
+<script>
+	document.getElementById('redirectButton').addEventListener('click', function () {
+	  // Get form values
+	  const name = document.getElementById('enquiryName').value.trim();
+	  const phoneNumber = document.getElementById('phoneNumber').value.trim();
+	  const message = document.getElementById('serviceMessage').value.trim();
+  
+	  // Validate form data
+	  if (name && phoneNumber && message) {
+		// Create the mailto link with the form data
+		const emailBody = `Name: ${name}\nPhone Number: ${phoneNumber}\nMessage/Service Request: ${message}`;
+		const mailtoLink = `mailto:sprucelifeskills@gmail.com?subject=Enquiry Form&body=${encodeURIComponent(emailBody)}`;
+  
+		// Open the email client
+		window.location.href = mailtoLink;
+	  } else {
+		alert('Please fill in all required fields.');
+	  }
+	});
+  </script>
+					
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4" >
+					<div class="widget">
+						<h5 class="footer-title">Contact <span>Information</span></h5>
+						<p class="text-capitalize m-b20"><div class="widget widget_getintuch">	
+							<ul>
+								<li><i class="ti-location-pin"></i>ICICI Bank, 3rd Floor, Navprabhat <br>Chambers, Besides, near Center <br> Point Hotel, Ramdaspeth, Nagpur, Maharashtra 440010 <br>[ Main Branch ]</li>
+								<li><i class="ti-mobile"></i>+91-9595025757 +91-8999499930</li>
+							</ul>
+						</div></p>
+						
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 col-md-7 col-sm-12">
+					<div class="row">
+						<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+							<div class="widget footer_widget">
+								<h5 class="footer-title">Company</h5>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about-1.html">About</a></li>
+									<li><a href="faq-1.html">FAQs</a></li>
+									<li><a href="contact-1.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+							<div class="widget footer_widget">
+								<h5 class="footer-title">Quick Link</h5>
+								<ul>
+									
+									<li><a href="https://student.sprucelifeskills.in/register">Register Now</a></li>
+									<li><a href="https://student.sprucelifeskills.in/login">Login</a></li>
+									<li><a href="https://student.sprucelifeskills.in/register">Admission</a></li>
+									<li><a href="event.html">Fee Payment</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+							<div class="widget footer_widget">
+								<h5 class="footer-title">Courses</h5>
+								<ul>
+									<li><a href="Medical-Coding.html">Medical Coding</a></li>										
+									<li><a href="Clinical Research.html">Clinical Research </a></li>
+									<li><a href="medical-billing.html">Medical Billing</a></li>	
+									<li><a href="Account-receviable.html">Account Receivable</a></li>	
+									<li><a href="Campus-Corporate.html">Campus to Corporate</a></li>										
+									<li><a href="Certification.html">Certification</a></li>			
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+					<div class="widget widget_gallery gallery-grid-4">
+						<h5 class="footer-title">Our Gallery</h5>
+						<ul class="magnific-image">
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.23_15c5dd0f.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.23_15c5dd0f.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.23_8b654b35.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.23_8b654b35.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.24_33f1f2f8.jpg" alt=""></a></li>
+				
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 text-center"> <a target="_blank" href="https://thebrandidentity.in">Copyright © 2024 TBI. All Rights Reserved.</a></div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer END ==== -->
+<button class="back-to-top fa fa-chevron-up" ></button>
+</div>
+<!-- External JavaScripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendors/counter/waypoints-min.js"></script>
+<script src="assets/vendors/counter/counterup.min.js"></script>
+<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="assets/vendors/masonry/masonry.js"></script>
+<script src="assets/vendors/masonry/filter.js"></script>
+<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/contact.js"></script>
+<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
+</body>
+
+
+</html>

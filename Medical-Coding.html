@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="medical coding, clinical research, Spruce, Spruce clinical research" />
+	<meta name="author" content="Spruce Lifeskills			" />
+	<meta name="robots" content="" />
+	
+	<!-- DESCRIPTION -->
+	<meta name="description" content="At Spruce Lifeskills Clinical Research & Medical Coding Institute, we are committed to empowering aspiring professionals with the knowledge and skills required to excel in the dynamic healthcare and research sectors. />
+	
+	<!-- OG -->
+	<meta property="og:title" content="Spruce Clinical Research & Medical Coding" />
+	<meta property="og:description" content="At Spruce Lifeskills Clinical Research & Medical Coding Institute, we are committed to empowering aspiring professionals with the knowledge and skills required to excel in the dynamic healthcare and research sectors." />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+
+	<script>
+		// Disable right-click
+		document.addEventListener('contextmenu', function(event) {
+			event.preventDefault();  // Prevent the context menu from appearing
+		});
+	</script>
+	
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>Spruce Lifeskills | Clinical Research& Medical Coding </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- All PLUGINS CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+	
+	<!-- TYPOGRAPHY ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+	
+	<!-- SHORTCODES ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
+	
+	<!-- STYLESHEETS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
+	
+	<!-- REVOLUTION SLIDER CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/navigation.css">
+	<!-- REVOLUTION SLIDER END -->	
+	<style>
+		/* Styling for the floating enquiry button */
+		.floating-btn {
+			position: fixed;
+			bottom: 40px;
+			left: 15px;
+			bottom: 30px;
+			z-index: 1000;
+		}
+		#submenu1{
+			padding-left: 15px;
+		}
+		.cours-search-bx m-b30{
+			padding-left: 100px;
+		}
+	</style>
+
+</head>
+<body id="bg">
+<div class="page-wraper">
+<div id="loading-icon-bx"></div>
+	<!-- Header Top ==== -->
+    <header class="header rs-nav header-transparent">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="topbar-left">
+						<ul>
+							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+							<li><a href="mailto:sprucelifeskills@gmail.com"><i class="fa fa-envelope-o"></i>sprucelifeskills@gmail.com</a></li>
+						</ul>
+					</div>
+					<div class="topbar-right">
+						<ul>
+							<li>
+								<div class="container" >
+									<div  class="row d-flex align-items-center justify-content-center text-center text-white py-3 flex-nowrap"  >
+										<div class="col-6 d-flex justify-content-center " >
+											<div class="button1">
+											<button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal" style="height:25px; padding-top: 4px;color: white;" >
+												Book Free Demo Class
+											</button>
+											</div>
+										</div>
+									
+				<!-- Include EmailJS Library -->
+				<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+				
+				<script>
+				  (function(){
+					emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+				  })();
+				
+				  function sendEmail(event) {
+					event.preventDefault(); // Prevent default form submission
+				
+					// Collect form data
+					let name = document.getElementById("name").value;
+					let email = document.getElementById("email").value;
+					let phone = document.getElementById("phone").value;
+				
+					// EmailJS send parameters
+					let templateParams = {
+					  from_name: name,
+					  from_email: email,
+					  phone_number: phone,
+					  to_email: "sprucelifeskills@gmail.com", // Receiver's email
+					};
+				
+					// Send the email
+					emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+					  .then(function(response) {
+						alert("Demo booked successfully! We will contact you soon.");
+						document.getElementById("demoForm").reset(); // Reset form after submission
+					  }, function(error) {
+						alert("Failed to book the demo. Please try again.");
+						console.log("Error:", error);
+					  });
+				  }
+				</script>
+				
+				<!-- Modal -->
+				<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="demoModalLabel" style="color: black;">Book Your Free Demo Class</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="modal-body">
+						<form id="demoForm" onsubmit="sendEmail(event)">
+						  <div class="mb-3">
+							<label for="name" class="form-label" style="color: black; text-align: left; display: block;">Your Name</label>
+							<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+						  </div>
+						  <div class="mb-3">
+							<label for="email" class="form-label" style="color: black;text-align: left; display: block;">Email address</label>
+							<input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+						  </div>
+						  <div class="mb-3">
+							<label for="phone" class="form-label" style="color: black; text-align: left; display: block;">Phone Number</label>
+							<input type="tel" class="form-control" id="phone" placeholder="Enter your Number" required>
+						  </div>
+						  <button type="submit" class="btn btn-success">Submit</button>
+						</form>
+					  </div>
+					</div>
+				  </div>
+				</div>
+									
+										<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+										
+										<div class="col-6 d-flex justify-content-center">
+											<a href="tel:+919595025757" class="btn btn-light fw-bold px-3 py-1">GET QUICK CALL BACK</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						
+							<li><a href="https://student.sprucelifeskills.in/addmission_login">Login</a></li>
+							<li><a href="https://student.sprucelifeskills.in/form">Register</a></li>
+							<li><a href="https://student.sprucelifeskills.in/register">Fee Payment</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-header navbar-expand-lg">
+			
+            <div class="menu-bar clearfix">
+				
+				<div class="container clearfix">
+					<!-- Header Logo ==== -->
+					<div class="menu-logo">
+						<a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
+					</div>
+					<!-- Mobile Nav Button ==== -->
+                    <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Author Nav ==== -->
+                    <div class="secondary-menu">
+                        <div class="secondary-inner">
+                            <ul>
+								
+							</ul>
+						</div>
+                    </div>
+					<!-- Search Box ==== -->
+                    <div class="nav-search-bar">
+                        <form action="#">
+                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                            <span><i class="ti-search"></i></span>
+                        </form>
+						<span id="search-remove"><i class="ti-close"></i></span>
+                    </div>
+					<!-- Navigation Menu ==== -->
+					
+                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+						
+						<div class="menu-logo">
+							<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+							<li class="active"><a href="index.html">Home </a>
+								
+							</li>
+							<li><a href="javascript:;">About Us <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="javascript:;">About<i class="fa fa-angle-right"></i></a>
+										<ul class="sub-menu">
+											<li><a href="about-1.html">Our Journey</a></li>
+											<li><a href="about-2.html">Our Mission & Vision</a></li>
+										</ul>
+									</li></ul>
+									
+							</li>
+							<li class="add-mega-menu"><a href="javascript:;">Our Courses <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu add-menu">
+									<li class="add-menu-left">
+										<h5 class="menu-adv-title">Our Courses</h5>
+										<ul>
+											<li><a href="Medical-Coding.html">Medical Coding<i class="fa fa-angle-right"></i></a>
+												<ul id="submenu1" class="sub-menu">
+													<li><a href="Medical-Coding.html">Foundation Medical Coding</a></li>
+													<li><a href="Medical-Coding.html">Certified Professional Coder (CPC) Training</a></li>
+												</ul>	
+											</li>										
+											<li><a href="Clinical Research.html">Clinical Research </a></li>
+											<li><a href="medical-billing.html">Medical Billing</a></li>	
+											<li><a href="Account-receviable.html">Account Receivable</a></li>	
+											<li><a href="Campus-Corporate.html">Campus to Corporate</a></li>										
+									
+									
+										</ul>
+									</li>
+									<li class="add-menu-right">
+										<img src="assets/images/adv/adv.jpg" alt=""/>
+									</li>
+								</ul>
+							</li>
+							<li><a href="blog-details.html">Blog  <i class="fa fa-chevron-down"></i></a>
+							</li>
+							<li><a href="gallery.html">Gallery </a></li>
+							<li><a href="contact-1.html">Contact </a></li>
+							<li><a href="Placement.html">Placement </a></li>
+							<li><a href="Certification.html">Certification </a></li>
+							
+						<div class="nav-social-link">
+							<a href="https://www.facebook.com/sprucelifeskills"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/sprucelifeskills?igsh=YnpjMGsxYXEwbmpv"><i class="fa fa-instagram"></i></a>
+							<a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a>
+						</div>
+                    </div>
+					<!-- Navigation Menu END ==== -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Top END ==== -->
+
+	<style>
+		/* Floating Social Media Buttons */
+		.social-icons {
+			position: fixed;
+			right: 20px;
+			top: 75%;
+			transform: translateY(-50%);
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			z-index: 1000;
+		}
+
+		.social-icons a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			color: white;
+			font-size: 24px;
+			text-decoration: none;
+			border-radius: 50%;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.social-icons a:hover {
+			transform: scale(1.1);
+		}
+
+		.whatsapp { background-color: #25D366; }
+		.facebook { background-color: #1877F2; }
+		.instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+	</style>
+</head>
+<body>
+
+	<!-- Social Media Icons -->
+	<div class="social-icons">
+		<a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+		<a href="https://www.facebook.com/sprucelifeskills" target="_blank" class="facebook">
+			<i class="fab fa-facebook-f"></i>
+		</a>
+		<a href="https://www.instagram.com/sprucelifeskills/" target="_blank" class="instagram">
+			<i class="fab fa-instagram"></i>
+		</a>
+	</div>
+
+
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <!-- <h5 style="font-size: 30px; text-align: center; margin-top: 120px;" class="text-white">Medical Coding</h5> -->
+				 </div>
+            </div>
+        </div>
+		<!-- Breadcrumb row -->
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li>Medical Coding</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Breadcrumb row END -->
+        <!-- inner page banner END -->
+		<div class="content-block">
+            <!-- About Us -->
+			<div class="section-area section-sp1">
+                <div class="container">
+					 <div class="row d-flex flex-row-reverse">
+						<div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+							<div class="course-detail-bx">
+									
+								<div class="pt-btn-join">
+									<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</a>
+								</div>
+										
+							
+							
+								<div class="course-info-list scroll-page">
+									<ul class="navbar">
+										<li><a class="nav-link" href="#pre"><i class="ti-zip"></i>Medical Coding </a></li>
+										
+										<li><a class="nav-link" href="#overview"><i class="ti-bookmark-alt"></i>Job Roles in Medical Coding</a></li>
+										<li><a class="nav-link" href="#curriculum"><i class="ti-user"></i>Industries Hiring Medical Coders</a></li>
+										<li><a class="nav-link" href="#enrollButton"><i class="ti-user"></i>Who Can enroll</a></li>
+										<li><a class="nav-link" href="#courseFeaturesButton"><i class="ti-user"></i>Courses & Course Features</a></li>
+										<!-- <li><a class="nav-link" href="#support"><i class="ti-user"></i>Instructor Support</a></li>
+										<li><a class="nav-link" href="#instructor"><i class="ti-comments"></i>Certification & Job Assistance</a></li>
+										<li><a class="nav-link" href="#features"><i class="ti-comments"></i>Additional Features</a></li>
+										<li><a class="nav-link" href="#reviews"><i class="ti-comments"></i>Curriculum Duration and Fees</a></li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-9 col-md-8 col-sm-12">
+							<div class="courses-post">
+								<div class="ttr-post-media media-effect">
+									<a href="#"><img src="cources img/medical-coding.jpg" alt=""></a>
+								</div>
+								<div class="ttr-post-info">
+									<div class="ttr-post-title ">
+										<h2 class="post-title" id="pre">Medical Coding: </strong></h2>
+									</div>
+									<div class="ttr-post-text">
+										<p>- Medical coding is the transformation of healthcare diagnosis, <br>procedures, medical services, and equipment into universal medical alphanumeric codes. <br>
+											The diagnoses and procedure codes are taken from medical record documentation,
+											 such as<br> transcription of physician's notes, laboratory and radiologic results, etc.
+											</p>
+											<p>- Medical coding professionals help ensure the codes are applied correctly during the medical<br> billing process,
+												 which includes abstracting the information from documentation,
+												 assigning <br>the appropriate codes, and creating a claim to be paid by insurance carriers.</p>
+									</div>
+								</div>
+							</div>
+							<div class="courese-overview" id="overview">
+								<h4>Job Roles in Medical Coding</h4>
+								<div class=" job role list">
+									<div class="role">
+										
+											<ol style="padding-left: 40px;">
+												<li>	Medical Coder</li>
+												<li>	Coding Assistant</li>
+												<li>	Certified Professional Coder (CPC)</li>
+												<li>	Medical Coding Specialist</li>
+												<li>	Coding Auditor</li>
+												<li>	Coding Manager</li>
+												<li>	Medical Coding Manager</li>
+												<li>	Revenue Cycle Manager</li>
+											</ol>
+									</div>
+									<!-- <div class="col-md-12 col-lg-8">
+										<h5 class="m-b5">Course Description</h5>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										<h5 class="m-b5">Certification</h5>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										<h5 class="m-b5">Learning Outcomes</h5>
+										<ul class="list-checked primary">
+											<li>Over 37 lectures and 55.5 hours of content!</li>
+											<li>LIVE PROJECT End to End Software Testing Training Included.</li>
+											<li>Learn Software Testing and Automation basics from a professional trainer from your own desk.</li>
+											<li>Information packed practical training starting from basics to advanced testing techniques.</li>
+											<li>Best suitable for beginners to advanced level users and who learn faster when demonstrated.</li>
+											<li>Course content designed by considering current software testing technology and the job market.</li>
+											<li>Practical assignments at the end of every session.</li>
+											<li>Practical learning experience with live project work and examples.cv</li>
+										</ul>
+									</div> -->
+								</div>
+							</div>
+							<div class="m-b30" id="curriculum">
+								<h4>Industries Hiring Medical Coders</h4>
+								<ul style="padding-left: 40px;">
+									<li>	Hospitals and Clinics</li>
+									<li>	Insurance Companies</li>
+									<li>	Medical Billing Companies</li>
+									<li>	Government Agencies</li>
+									<li>	Remote Work Opportunities</li>
+								</ul>
+								
+								<style>
+									.buttons {
+										display: flex;
+										align-items: center;
+										margin-top: 20px;
+										margin-bottom: 20px;
+										max-width: 500px; /* Ensure there's enough space for both button and text */
+									}
+									#enrollButton {
+										padding: 8px 12px;
+										background-color: rgb(1, 82, 72);
+										color: white;
+										border: none;
+										border-radius: 5px;
+										cursor: pointer;
+									}
+									#enrollInfo {
+										font-size: 16px;
+										display: none;
+										color: #333;
+										margin-left: 10px; /* Adds space between button and text */
+									}
+									.arrow {
+										margin-right: 5px;
+									}
+								</style>
+								
+								<div class="buttons">
+									<button id="enrollButton">Who can Enroll</button>
+									<span id="enrollInfo"><span class="arrow">➔</span>D.pharm, B.pharm, M.pharm, B.sc & M.sc (Any Life Science stream), BAMS, BDS, BHMS, B.Pth.</span>
+								</div>
+								
+								<script>
+									const enrollButton = document.getElementById("enrollButton");
+									const enrollInfo = document.getElementById("enrollInfo");
+								
+									enrollButton.addEventListener("click", function() {
+										enrollInfo.style.display = enrollInfo.style.display === 'none' || enrollInfo.style.display === '' ? 'inline' : 'none';
+									});
+								</script>
+								
+												<!-- <li> 
+													<div class="curriculum-list-box">
+														<span>Basics of medical billing and coding
+													</div>
+													
+												</li> -->
+											
+											
+										
+									
+											<!-- <h5> Course & Course features</h5> -->
+											<div class="courese-overview" id="overview">
+												<div class="container">
+													<div class="row">
+														<div class="col-12">
+															<style>
+																.table {
+																	margin-top: 20px;
+																}
+																#courseFeaturesButton {
+																	padding: 8px 12px;
+																	background-color: rgb(1, 82, 72);
+																	color: white;
+																	border: none;
+																	border-radius: 5px;
+																	cursor: pointer;
+																}
+																table {
+																	width: 100%;
+																	border-collapse: collapse;
+																	margin-top: 20px;
+																	display: none; /* Initially hide the table */
+																}
+																th, td {
+																	border: 1px solid black;
+																	padding: 10px;
+																	text-align: center;
+																}
+																th {
+																	background-color: #f2f2f2;
+																}
+																td .check-sign {
+																	color: green;
+																	font-size: 20px;
+																}
+																td .know-more {
+																	color: rgb(1, 82, 72);
+																	cursor: pointer;
+																	text-decoration: underline;
+																}
+															</style>
+												
+															<div class="table">
+																<button id="courseFeaturesButton" class="btn btn-primary">Course & Course Features</button>
+												
+																<table id="courseTable" class="table table-responsive">
+																	<thead>
+																		<tr>
+																			<th>Courses & Course Features</th>
+																			<th>Post Graduate Diploma in Clinical Research & Medical Coding</th>
+																			<th>Advance Diploma in Medical Coding</th>
+																			<th>Diploma In Medical Coding(Foundation)</th>
+																			<th>Diploma In Certified Professional Coder (CPC)</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>Duration</td>
+																			<td>12 Months</td>
+																			<td>6 Months</td>
+																			<td>3 Months</td>
+																			<td>3 Months</td>
+																		</tr>
+																		<tr>
+																			<td>Spruce® Learning Management Software [LMS]</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																		</tr>
+													
+																		<tr>
+																			<td>AAPC LMS</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>-</td>
+																			<td>✔</td>
+																		</tr>
+																		<tr>
+																			<td>RTMNU Certificate</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>-</td>
+																		</tr>
+																		<tr>
+																			<td>NEP (National Education Policy) Academic Credits (3)</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>-</td>
+																		</tr>
+																		<tr>
+																			<td>AAPC 2025 Study Material</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>-</td>
+																			<td>✔</td>
+																		</tr>
+																		<tr>
+																			<td>650+ Practice Questions</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>-</td>
+																			<td>✔</td>
+																		</tr>
+																		<tr>
+																			<td>Regular Tests</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																		</tr>
+																		<tr>
+																			<td>Absolute Placement Support</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																		</tr>
+																		<tr>
+																			<td>Study Material & Exam Preparation</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>-</td>
+																			<td>✔</td>
+																		</tr>
+																		<tr>
+																			<td>Daily / Weekly Batches</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																			<td>✔</td>
+																		</tr>
+																		<tr>
+																			<td></td>
+																			<td><a href="#" class="know-more">Know More</a></td>
+																			<td><a href="#" class="know-more">Know More</a></td>
+																			<td><a href="#" class="know-more">Know More</a></td>
+																			<td><a href="#" class="know-more">Know More</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<script>
+													document.getElementById('courseFeaturesButton').addEventListener('click', function() {
+														var table = document.getElementById('courseTable');
+														if (table.style.display === 'none') {
+															table.style.display = 'table'; // Show the table
+														} else {
+															table.style.display = 'none'; // Hide the table
+														}
+													});
+												</script>
+										
+										
+												<!-- <li>
+													<h5>CPT (Current Procedural Terminology) Coding:</h5>
+													<ul>
+														<li>
+															<div class="curriculum-list-box">
+																<span>Introduction to procedural coding using CPT codes
+															</div>
+															
+														</li>
+														<li>
+															<div class="curriculum-list-box">
+																<span>Understanding the different sections of CPT (Evaluation and Management, Anesthesia, Surgery, Radiology, Pathology, and Medicine)
+															</div>
+															
+														</li></ul></li> -->
+
+														<!-- <li>
+															<h5>HCPCS Level II (Healthcare Common Procedure Coding System):</h5>
+															<ul>
+																<li>
+																	<div class="curriculum-list-box">
+																		<span>Coverage of supplies, drugs, and durable medical equipment codes
+																	</div>
+																	
+																</li></ul></li> -->
+																
+
+																<!-- <li>
+																	<h5>Modifiers:</h5>
+																	<ul>
+																		<li>
+																			<div class="curriculum-list-box">
+																				<span>Explanation of modifier codes and their application to medical billing and coding
+																			</div>
+																			
+																		</li></ul></li> -->
+																	
+
+																		<!-- <li>
+																			<h5>Compliance and Legal Aspects:</h5>
+																			<ul>
+																				<li>
+																					<div class="curriculum-list-box">
+																						<span>Understanding of HIPAA (Health Insurance Portability and Accountability Act) regulations
+																					</div>
+																					
+																				</li>
+																				<li>
+																					<div class="curriculum-list-box">
+																						<span>Medical ethics and compliance issues in coding
+																					</div>
+																					
+																				</li></ul></li> -->
+
+																				<!-- <li>
+																					<h5>Reimbursement and Billing Processes:</h5>
+																					<ul>
+																						<li>
+																							<div class="curriculum-list-box">
+																								<span>Overview of insurance claims, reimbursement systems, and payment structures
+																							</div>
+																							
+																						</li>
+																						<li>
+																							<div class="curriculum-list-box">
+																								<span>Medicare and Medicaid billing specifics
+																							</div>
+																							
+																						</li>
+											</ul> -->
+										<!-- </li>
+									</ul>
+							</div> -->
+
+							<!-- <div class="m-b30" id="exam">
+								<h4>Examination Preparation</h4>
+								
+								<ul class="curriculum-list">
+										<li>
+											<h5>CPC Exam Preparation:</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Practice exams and mock tests to simulate real exam conditions
+													</div>
+													
+												</li>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Review of test-taking strategies and tips for managing time
+													</div>
+													
+												</li>
+
+												<li>
+													<div class="curriculum-list-box">
+														<span>Study materials like CPC Exam study guides, practice questions, and coding books
+													</div>
+													
+												</li>
+											
+											</ul>
+										</li>
+										<li>
+											<h5>Sample Case Studies and Real-World Scenarios:</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Hands-on coding exercises using actual medical records
+													</div>
+												
+												</li>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Case studies to help students understand the application of codes in real-world situations
+													</div>
+													
+												</li>
+												
+											</ul>
+										</li>
+										
+												
+											</ul>
+										</li>
+									</ul>
+							</div>
+
+							
+
+							<div class="m-b30" id="tools">
+								<h4>Hands-On Practice and Tools</h4>
+								
+								<ul class="curriculum-list">
+										<li>
+											<h5>Access to Online Resources:</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Online portals with access to practice questions, quizzes, and additional reading material
+													</div>
+													
+												</li>
+												
+																						
+											</ul>
+										</li>
+									
+											</ul>
+										</li>
+									</ul>
+							</div> -->
+
+							<!-- <div class="m-b30" id="support">
+								<h4>Instructor Support</h4>
+								
+								<ul class="curriculum-list">
+									<li>
+										<h5>Expert Faculty</h5>
+										<ul>
+											<li>
+												<div class="curriculum-list-box">
+													<span>Experienced instructors with industry knowledge and CPC credentials
+												</div>
+												
+											</li>
+											<li>
+												<div class="curriculum-list-box">
+													<span>Availability for one-on-one consultation, doubt clearing, and mentorship
+												</div>
+												
+											</li>
+
+											<li>
+												<div class="curriculum-list-box">
+													<span>Regular feedback on assignments and exams
+												</div>
+												
+											</li>
+										
+										</ul>
+									</li>
+								
+									
+											
+										</ul>
+									</li>
+								
+										
+									
+											
+							</div> -->
+
+							<!-- <div class="m-b30" id="support">
+								<h4>Certification & Job Assistance</h4>
+								
+								<ul class="curriculum-list">
+									<li>
+										<h5>CPC Certification</h5>
+										<ul>
+											<li>
+												<div class="curriculum-list-box">
+													<span>Upon completion of the course, students should be ready to sit for the official CPC certification exam offered by AAPC (American Academy of Professional Coders) or other certification bodies
+												</div>
+												
+											</li>
+											</ul>
+										</li>
+											<li>
+												<h5>Career Support</h5>
+												<ul>
+													<li>
+														<div class="curriculum-list-box">
+															<span>Resume-building workshops and interview preparation
+														</div>
+														
+													</li>
+
+													<li>
+														<div class="curriculum-list-box">
+															<span>Networking opportunities with healthcare organizations
+														</div>
+														
+													</li>
+
+													<li>
+														<div class="curriculum-list-box">
+															<span>Job placement assistance or career counseling for coding professionals
+														</div>
+														
+													</li>
+										</ul>
+									</li>
+								
+									
+											
+										</ul>
+									</li>
+								
+										
+									
+											
+							</div> -->
+
+							<!-- <div class="m-b30" id="Features">
+								<h4>Additional Features</h4>
+								
+								<ul class="curriculum-list">
+										<li>
+											<h5>Flexible Schedule Options</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>For working professionals, some courses may offer evening or weekend sessions.
+													</div>
+													
+												</li>
+											
+											
+											</ul>
+										</li>
+										<li>
+											<h5>Accreditation</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>The course is accredited by a recognized body like AAPC & Nagpur University [RTMNU], which adds credibility to the certification.
+													</div>
+												
+												</li>
+												
+												
+											</ul>
+										</li>
+
+										<li>
+											<h5>Post-Course Support</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Access to post-course support and resources to stay updated with industry changes.
+													</div>
+													
+												</li>
+											
+											
+											</ul>
+										</li>
+										
+												
+											</ul>
+										</li>
+									</ul>
+							</div> -->
+
+							<!-- <div class="m-b30" id="fee">
+								<h4>Premium, standard and foundation in 3 bullet points: curriculum duration and fees</h4>
+								
+								<ul class="curriculum-list">
+										<li>
+											<h5>Course 1: Advance Diploma in Medical Coding</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Anatomy & Physiology
+													</div>
+													
+												</li>
+
+												<li>
+													<div class="curriculum-list-box">
+														<span>International Classification of Diseases (ICD-10-CM)
+													</div>
+													
+												</li>
+
+												<li>
+													<div class="curriculum-list-box">
+														<span>Current Procedural Terminology (CPT)
+													</div>
+													
+												</li>
+
+												<li>
+													<div class="curriculum-list-box">
+														<span>Healthcare Common Procedural Systems (HCPCS)
+													</div>
+													
+												</li>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Practice Questions (650+)
+													</div>
+													
+												</li>
+												<li>
+													<div class="curriculum-list-box">
+														<span>Learning Management System (LMS) of American Academy of Professional Coders (AAPC) & Spruce. 
+													</div>
+													
+												</li>
+												
+											
+											
+											</ul>
+										</li>
+										<li>
+											<h5>Duration</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>6 Months
+													</div>
+												
+												</li>
+												
+												
+											</ul>
+										</li>
+
+										<li>
+											<h5>Fee</h5>
+											<ul>
+												<li>
+													<div class="curriculum-list-box">
+														<span>INR 45000/-
+													</div>
+													
+												</li>
+											
+											
+											</ul>
+										</li>
+										
+												
+											</ul>
+										</li>
+									</ul>
+							</div> -->
+							
+							
+							
+						</div>
+						
+					</div>
+				</div>
+            </div>
+        </div>
+		<!-- contact area END -->
+		
+    </div>
+    <!-- Content END-->
+	<!-- Footer ==== -->
+    <footer>
+        <div class="footer-top">
+			<div class="pt-exebar">
+				<div class="container">
+					<div class="d-flex align-items-stretch">
+						<div class="pt-logo mr-auto">
+							<a href="index.html"><img src="assets/images/logo-white.png" alt=""/></a>
+						</div>
+						<div class="pt-social-link">
+							<ul class="list-inline m-a0">
+								<li><a href="https://www.facebook.com/sprucelifeskills" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://api.whatsapp.com/send/?phone=918446294890&text&type=phone_number&app_absent=0" class="btn-link"><i class="fa fa-whatsapp"></i></a></li>
+								<li><a href="http://www.linkedin.com/in/spruce-lifeskills-8a3711258" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<div class="pt-btn-join">
+							<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</a>
+						</div>
+					
+						<!-- Modal -->
+						<div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p>Please provide your basic details, and you'll be redirected to the full information form.</p>
+			  <form id="basicInfoForm">
+				<div class="mb-3">
+				  <label for="enquiryName" class="form-label">Name</label>
+				  <input type="text" class="form-control" id="enquiryName" placeholder="Enter your name" required>
+				</div>
+				<div class="mb-3">
+				  <label for="phoneNumber" class="form-label">Phone Number</label>
+				  <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+				</div>
+				<div class="mb-3">
+				  <label for="serviceMessage" class="form-label">Message/Service</label>
+				  <textarea class="form-control" id="serviceMessage" rows="4" placeholder="Enter your message or service request" required></textarea>
+				</div>
+				<button type="button" class="btn btn-primary w-100" id="redirectButton">Submit</button>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+						<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+				<!-- JavaScript for Redirection -->
+<script>
+	document.getElementById('redirectButton').addEventListener('click', function () {
+	  // Get form values
+	  const name = document.getElementById('enquiryName').value.trim();
+	  const phoneNumber = document.getElementById('phoneNumber').value.trim();
+	  const message = document.getElementById('serviceMessage').value.trim();
+  
+	  // Validate form data
+	  if (name && phoneNumber && message) {
+		// Create the mailto link with the form data
+		const emailBody = `Name: ${name}\nPhone Number: ${phoneNumber}\nMessage/Service Request: ${message}`;
+		const mailtoLink = `mailto:sprucelifeskills@gmail.com?subject=Enquiry Form&body=${encodeURIComponent(emailBody)}`;
+  
+		// Open the email client
+		window.location.href = mailtoLink;
+	  } else {
+		alert('Please fill in all required fields.');
+	  }
+	});
+  </script>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+                <div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4" >
+                        <div class="widget">
+                            <h5 class="footer-title">Contact <span>Information</span></h5>
+							<p class="text-capitalize m-b20"><div class="widget widget_getintuch">	
+								<ul>
+									<li><i class="ti-location-pin"></i>ICICI Bank, 3rd Floor, Navprabhat <br>Chambers, Besides, near Center <br> Point Hotel, Ramdaspeth, Nagpur, Maharashtra 440010 <br>[ Main Branch ]</li>
+									<li><i class="ti-mobile"></i>+91-9595025757 +91-8999499930</li>
+								</ul>
+							</div></p>
+                            
+                        </div>
+                    </div>
+					<div class="col-12 col-lg-5 col-md-7 col-sm-12">
+						<div class="row">
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Company</h5>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about-1.html">About</a></li>
+										<li><a href="faq-1.html">FAQs</a></li>
+										<li><a href="contact-1.html">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Quick Link</h5>
+									<ul>
+										
+										<li><a href="https://student.sprucelifeskills.in/register">Register Now</a></li>
+										<li><a href="https://student.sprucelifeskills.in/login">Login</a></li>
+										<li><a href="https://student.sprucelifeskills.in/register">Admission</a></li>
+										<li><a href="event.html">Fee Payment</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Courses</h5>
+									<ul>
+										<li><a href="Medical-Coding.html">Medical Coding</a></li>										
+										<li><a href="Clinical Research.html">Clinical Research </a></li>
+										<li><a href="medical-billing.html">Medical Billing</a></li>	
+										<li><a href="Account-receviable.html">Account Receivable</a></li>	
+										<li><a href="Campus-Corporate.html">Campus to Corporate</a></li>										
+										<li><a href="Certification.html">Certification</a></li>			
+									</ul>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+                        <div class="widget widget_gallery gallery-grid-4">
+                            <h5 class="footer-title">Our Gallery</h5>
+                            <ul class="magnific-image">
+								<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.23_15c5dd0f.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.23_15c5dd0f.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.23_8b654b35.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.23_8b654b35.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" alt=""></a></li>
+							<li><a href="images/WhatsApp Image 2024-12-26 at 11.22.24_05fefc1b.jpg" class="magnific-anchor"><img src="images/WhatsApp Image 2024-12-26 at 11.22.24_33f1f2f8.jpg" alt=""></a></li>
+				
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center"> <a target="_blank" href="https://thebrandidentity.in">Copyright © 2024 TBI. All Rights Reserved.</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up" ></button>
+</div>
+<!-- External JavaScripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendors/counter/waypoints-min.js"></script>
+<script src="assets/vendors/counter/counterup.min.js"></script>
+<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="assets/vendors/masonry/masonry.js"></script>
+<script src="assets/vendors/masonry/filter.js"></script>
+<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/jquery.scroller.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/contact.js"></script>
+<!-- <script src="assets/vendors/switcher/switcher.js"></script> -->
+</body>
+
+</html>
